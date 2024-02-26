@@ -1,0 +1,302 @@
+<!--
+    Author:     A.L.A. FALIH
+    Date:       March 31st, 2023
+    Purpose:    Common CSS styles for all pages
+    Copyright:  © 2023, All rights reserved
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="about-us.css">
+	<link rel="stylesheet" href="/student-2/common.css">
+    <script defer type="module" src="/student-1/main.js"></script>
+    <title>Group Members</title>
+</head>
+
+<body>
+<!--header container-->   
+<header id="main-header">
+	<div id="main-logo"></div>
+	<label id="menu-icon" for="menu-checkbox">
+	<span id="cart-notif"></span>
+	</label>
+	<input type="checkbox" id="menu-checkbox">
+	<nav id="nav-bar">
+		<ul>
+			<li ><a id="home-icon" href="/student-2/main-page/main-page.html"></a></li>
+			<li><a id="nav-item1" href="/student-1/products/products.html">PRODUCTS</a></li>
+			<li><a id="nav-item2" href="/student-4/gallery/gallery.html">GALLERY</a></li>
+			<li><a id="nav-item3" href="/student-3/quiz/quiz.html">QUIZ</a></li>
+			<li><a id="nav-item4" href="/student-2/feedback/feedback.html">FEEDBACK</a></li>
+			<li class="active-menu"><a id="nav-item5" href="/student-3/about-us/about-us.html">ABOUT US</a></li>
+			<li><a id="nav-item6" href="/student-4/site-map/site-map.html">SITE MAP</a></li>
+			<li>
+				<div id="control-icons">
+					<a id="cart-icon" class="control-button">
+						<span id="cart-count"></span>
+					</a>
+					<a id="theme-icon" class="control-button"></a>
+					<select name="site-lang" id="lang-select">
+						<option class="langcolor" value="0">English</option>
+						<option class="langcolor" value="1">සිංහල</option>
+						<option class="langcolor" value="2">தமிழ்</option>
+					</select>
+				</div>
+			</li>
+		</ul>
+	</nav>    
+</header>
+>
+
+
+	<!--bg container-->
+		<section id="quiz-image-container">
+	
+			<div id="quiz-image-gradient"></div>
+			
+		</section>
+<!--main container-->		
+<section id="studentDetails">
+
+	<h1>Wonderscape Team </h1>
+	
+	<!--hovering container-->
+	<div class="members-container">
+		<div class="st-container">
+			<div class="member">
+				<img src="/student-1/images/student-1.png" alt="Member 1" data-name="Radeesh Mayadanne" data-role="The Web Master">
+				<div class="member-details">
+					<p class="name"></p>
+					<p class="role"></p>
+				</div>
+				<a href ="#student1details">More</a>
+			</div>
+			<a class="more-details-button" href ="#student1details">More</a>
+		</div>
+
+		<div class="st-container">
+			<div class="member">
+				<img src="/student-2/images/student-2.png" alt="Member 2" data-name="Chamath Jayasanka" data-role="The Info Maker">
+				<div class="member-details">
+					<p class="name"></p>
+					<p class="role"></p>
+				</div>
+				<a href ="#student2details">More</a>
+			</div>
+			<a class="more-details-button" href ="#student2details">More</a>
+		</div>
+
+		<div class="st-container">
+			<div class="member">
+				<img src="../images/student-3.jpg" alt="Member 3" data-name="Ahamed Falih" data-role="The Web Artist">
+				<div class="member-details">
+					<p class="name"></p>
+					<p class="role"></p>
+				</div>
+				<a href ="#student3details">More</a>
+			</div>
+			<a class="more-details-button" href ="#student3details">More</a>
+		</div>
+
+		<div class="st-container">
+			<div class="member">
+				<img src="/student-4/images/student-4.jpg" alt="Member 4" data-name="Yasanth Dolamulla" data-role="The Designer">
+				<div class="member-details">
+					<p class="name"></p>
+					<p class="role"></p>
+				</div>
+			</div>
+			<a class="more-details-button" href ="#student4details">More</a>
+		</div>
+
+	</div>
+</section>
+
+<!--more details container-->
+<div id="specificDetails">
+	<!--student 1-->
+	<div class="student-details-content">
+		<h2>The Web Master</h2>
+		<div class="img-details"  id="student1details">
+		<div class="content-img">
+		<img src="/student-1/images/student-1.png" alt="student-1" style="width:700px;height:620px;filter: grayscale(100%);" >
+		</div>
+		<!--fliping inner container-->
+		<div class="flip-box">
+		<div class="flip-box-inner">
+		<div class="flip-box-front">
+			<img src="../images/webghost.jpg" alt="student-1" style="width:500px;height:620px" >
+		</div>
+		<div class="flip-box-back">
+		<ul class="details-list">
+			<li>Role 	: Student 1 </li>
+			<li>Main   	: Presentation & Products </li>
+			<li>IIT ID 	: 20220963	</li>
+			<li>UOW ID 	: 19535957</li>
+			<li>Course 	: Software Engineering</li>
+			<li>Batch  	: Spetember F/T</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<p class="quote">
+			“Work, Travel, Save, Repeat.<br>
+			The gladdest moment in human life is a departure into unknown lands,<br>
+			The journey not the arrival matters."
+		</p>
+	</div>
+	<!--student 2-->	
+	<div class="student-details-content">
+		<h2>The Info Maker</h2>
+		<div class="img-details"  id="student2details">
+		<div class="content-img">
+		<img src="/student-2/images/student-2.png" alt="student-2" style="width:700px;height:620px;filter: grayscale(100%);">
+		</div>
+		<div class="flip-box">
+		<div class="flip-box-inner">
+		<div class="flip-box-front">
+			<img src="../images/infor.jpg" alt="student-2" style="width:500px;height:620px" >
+		</div>
+		<div class="flip-box-back">
+		<ul class="details-list">
+			<li>Role 	: Student 2 </li>
+			<li>Main   	: Main & Feedback </li>
+			<li>IIT ID 	: 20220725	</li>
+			<li>UOW ID 	: 19540700</li>
+			<li>Course 	: Computer Science</li>
+			<li>Batch  	: Spetember F/T</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<p class="quote">
+			“Traveling – it leaves you speechless, then turns you into a storyteller. <br>
+			Better to see something once than hear about it a thousand times,<br>
+			Adventure may hurt you but monotony will kill you."
+		</p>
+	</div>	
+	<!--student 3-->
+	<div class="student-details-content">
+		<h2>The Web Artist</h2>
+		<div class="img-details"  id="student3details">
+		<div class="content-img">
+		<img src="../images/student-3.jpg" alt="student-3" style="width:700px;height:620px;filter: grayscale(100%);">
+		</div>
+		<div class="flip-box">
+		<div class="flip-box-inner">
+		<div class="flip-box-front">
+			<img src="../images/theman.jpg" alt="student-3" style="width:500px;height:620px" >
+		</div>
+		<div class="flip-box-back">
+		<ul class="details-list">
+			<li>Role 	: Student 3 </li>
+			<li>Main   	: Quiz & About-Us </li>
+			<li>IIT ID 	: 20220943	</li>
+			<li>UOW ID 	: 19535878</li>
+			<li>Course 	: Software Engineering</li>
+			<li>Batch  	: Spetember F/T</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<p class="quote">
+			“In Sri Lanka, when two strangers meet, they ask a series of questions that reveal family, <br>
+			ancestral village, and blood ties until they arrive at a common friend or relative. Then they say,<br>
+			"Those are our people, so you are our people." It's a small place. Everyone knows everyone."
+		</p>
+	</div>	
+	<!--student 4-->	
+	<div class="student-details-content">
+		<h2>The Designer</h2>
+		<div class="img-details"  id="student4details">
+		<div class="content-img">
+		<img src="/student-4/images/student-4.jpg" alt="student-4"style="width:700px;height:620px;filter: grayscale(100%);">
+		</div>
+		<div class="flip-box">
+		<div class="flip-box-inner">
+		<div class="flip-box-front">
+			<img src="../images/sigma.jpg" alt="student-4" style="width:500px;height:620px" >
+		</div>
+		<div class="flip-box-back">
+		<ul class="details-list">
+			<li>Role 	: Student 4 </li>
+			<li>Main   	: Gallery & SVG </li>
+			<li>IIT ID 	: 20220776	</li>
+			<li>UOW ID 	: 19540762</li>
+			<li>Course 	: Computer Science</li>
+			<li>Batch  	: Spetember F/T</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<p class="quote">
+			“There are no foreign lands. It is the traveler only who is foreign, <br>
+			A good traveler has no fixed plans, and is not intent on arriving."<br>
+			<br>
+		</p>
+	</div>		
+</div>
+<!--footer container-->
+<footer id="footer" class="container-default">
+	<div id="inner-container" class="container-default">
+		<div class="row">
+			<div class="footer-col">
+				<h4 id="pages">Pages</h4>
+				<ul>
+					<li ><a id="home" href="/student-2/main-page/main-page.html">Home</a></li>
+					<li ><a id="products" href="/student-1/products/products.html">Products</a></li>
+					<li ><a  id="gallery"href="/student-4/gallery/gallery.html">Gallery</a></li>
+					<li ><a id="quiz" href="/student-3/quiz/quiz.html">Quiz</a></li>
+					<li><a id="feedback" href="/student-2/feedback/feedback.html">Feedback</a></li>
+					<li><a id="sitemap" href="/student-4/site-map/site-map.html">Sitemap</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 id="content-pages">Content pages</h4>
+				<ul>
+					<li><a id="our-services" href="/student-1/our-services/our-services.html">Our Services</a></li>
+					<li><a id="sigirock" href="/student-2/dest-of-month/dest-of-month.html">Sigiriya-rock</a></li>
+					<li><a id="contactus" href="/student-3/contact-us/contact-us.html">Contact us</a></li>
+					<li><a id="dest-more-info" href="/student-4/info-page/info-page.html">destination more information</a></li>
+					
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Page Editors</h4>
+				<ul>
+					<li><a id="student1" href="/student-1/page-editor/page-editor.html">Student-1</a></li>
+					<li><a  id="student2" href="/student-2/page-editor/page-editor.html">Student-2</a></li>
+					<li><a  id="student3" href="/student-3/page-editor/page-editor.html">Student-3</a></li>
+					<li><a id="student4" href="/student-4/page-editor/page-editor.html">Student-4</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 id="followus">follow us</h4>
+				<div id="sociallinks" class="social-links">
+					<!--These are sample place holder links-->
+					<a href="https://www.facebook.com/wonderscapetravel/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.youtube.com/@wonderscape"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.instagram.com/w0nder.scape/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.twitter.com/wonderscape1"><i class="fab fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>    
+	</div>
+</footer>
+
+
+<script src="./about-us.js"></script>
+</body>
+</html>

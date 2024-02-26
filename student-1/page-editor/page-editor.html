@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        body {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 96%;
+            height: 100px;
+            border-radius: 4px;
+            background-color: rgb(47, 153, 224);
+            margin: 10px;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            box-shadow: 0 0 2px #000000;
+        }
+        header > h2 {
+            font-size: 25px;
+            font-weight: 400;
+        }
+        header > h3 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        body > h3 {
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 20px 0;
+        }
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 96%;
+            height: 170px;
+            border-radius: 4px;
+            max-width: 800px;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 0 2px #000000;
+        }
+        section > h4 { margin-top: 12px; }
+        section > p { margin-top: 12px; }
+        section > a { 
+            position: absolute;
+            height: 40px;
+            width: 100%;
+            bottom: 0;
+            background-color: rgb(24, 91, 226);
+            line-height: 40px;
+            color: #ffffff;
+        }
+        #bottom-element {
+            margin-bottom: 50px;
+        }
+        body > h3 > a {
+            text-align: center;
+            display: block;
+        }
+</style>
+</head>
+<body>
+    
+    <header>
+        <h2>PAGE EDITOR</h2>
+        <h3> Name: A.A.N.R. Mayadunne</h3>
+        <h3>Role: Student 1</h3>
+    </header>    
+    <h3>Following pages were edited by me<a href="#bottom-element">Jump to Bottom</a></h3>
+
+    <section>
+        <h4>Presentation Page</h4>
+        <p>Created the presentation page including coursework details, module details, titles and all student information. Added a timer to redirect user automatically to the main page after 4 seconds</p>
+        <a href="/student-1/presentation/presentation.html">Go to Presentation Page</a>
+    </section>
+    <section>
+        <h4>Products Page</h4>
+        <p>Created the products page to load product items from a JSON file. Added functionality to add product items to the cart including quantity and calculate the bill total automatically</p>
+        <a href="/student-1/products/products.html">Go to Products Page</a>
+    </section>
+    <section>
+        <h4>Checkout Page</h4>
+        <p>Created checkout page to validate the checkout input fields using JavaScript</p>
+        <a href="/student-1/products/checkout.html">Go to Checkout Page</a>
+    </section>
+    <section>
+        <h4>Order Confirmation Page</h4>
+        <p>Created order confirmation page to load active order information from local storage and ask user to complete their order</p>
+        <a href="/student-1/products/confirm.html">Go to Order Confirmation Page</a>
+    </section>
+    <section>
+        <h4>Our Services Page</h4>
+        <p>Created this as an additional content page including information about services we provide</p>
+        <a href="/student-1/our-services/our-services.html">Go to Our Services Page</a>
+    </section>
+    <section>
+        <h4>Page Editor Page</h4>
+        <p>Created page editor page including information about pages, common scripts and styles I created for our website</p>
+        <a href="/student-1/page-editor/page-editor.html">Go to Page Editor Page</a>
+    </section>
+
+    <section>
+        <h4>Additional Scripts For All Pages: main.js</h4>
+        <p>Created main.js file including required JS classes and functions to manage common functionality of all pages</p>
+        <a href="/student-1/main.js">Go to main.js</a>
+    </section>
+    <section>
+        <h4>Additional Scripts For All Pages: cart.js</h4>
+        <p>Created cart.js to manage product cart on all pages</p>
+        <a href="/student-1/products/cart.js">Go to cart.js</a>
+    </section>
+    <section>
+        <h4>Additional Scripts For All Pages: lang.js</h4>
+        <p>Created lang.js including required JS class to manage languages of all pages</p>
+        <a href="/student-1/lang.js">Go to lang.js</a>
+    </section>
+    <section id="bottom-element">
+        <h4>Additional Styles For All Pages: cart.css</h4>
+        <p>Created cart.css including styles for cart popup on all pages</p>
+        <a href="/student-1/products/cart.css">Go to cart.css</a>
+    </section>
+
+</body>
+</html>

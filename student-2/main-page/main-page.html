@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lobster&family=Poppins:wght@200;300;400;500;600;700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400&family=Poppins:wght@100;300;400;500&display=swap"rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./main-page.css">
+    <script type="module" src="/student-1/main.js"></script>
+    <title>Wonderscape</title>
+</head>
+
+<body>
+<!------------------header part------------------------>
+
+    <header id="main-header">
+        <div id="main-logo"></div>
+        <label id="menu-icon" for="menu-checkbox">
+            <span id="cart-notif"></span>
+        </label>
+        <input type="checkbox" id="menu-checkbox">
+        <nav id="nav-bar">
+            <ul>
+                <li class="active-menu"><a id="home-icon" href="/student-2/main-page/main-page.html"></a></li>
+                <li><a id="nav-item1" href="/student-1/products/products.html">PRODUCTS</a></li>
+                <li><a id="nav-item2" href="/student-4/gallery/gallery.html">GALLERY</a></li>
+                <li><a id="nav-item3" href="/student-3/quiz/quiz.html">QUIZ</a></li>
+                <li><a id="nav-item4" href="/student-2/feedback/feedback.html">FEEDBACK</a></li>
+                <li><a id="nav-item5" href="/student-3/about-us/about-us.html">ABOUT US</a></li>
+                <li><a id="nav-item6" href="/student-4/site-map/site-map.html">SITE MAP</a></li>
+                <li>
+                    <div id="control-icons">
+                        <a id="cart-icon" class="control-button">
+                            <span id="cart-count"></span>
+                        </a>
+                        <a id="theme-icon" class="control-button"></a>
+                        <select name="site-lang" id="lang-select">
+                            <option class="langcolor" value="0">English</option>
+                            <option class="langcolor" value="1">සිංහල</option>
+                            <option class="langcolor" value="2">தமிழ்</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="video-container">
+        <h3>HELLO! Travellers</h3>
+        <video muted autoplay loop src="../videos/background.mp4"></video>
+        <div id="video-gradient"></div>
+        <label id="banner">Visit Sri Lanka</label>
+        <label id="banner-desc">Discover The Wonders of <span id="banner-site-name">Sri Lanka</span></label>
+    </section>
+<!----------------section for the main page content--------------------------->
+    <section id="dest-month-container" class="container-default">
+        <h1 id="sigitopic">SIGIRIYA</h1>
+        <div>
+            <h2 id="dotm">Destination of The Month</h2>
+            <p id="sigidisc">Sigiriya was designated as a world heritage site in 1982. Sigiriya is famous for it's
+                palace ruins on top of a massive 200 meter
+                high rock surrounded by the remains of an extensive network of gardens, reservoirs and other structures.
+                The rock itself is a lava plug left over from an ancient long extinct volcano.
+            </p>
+            <a id="sigi-l-m" href="../dest-of-month/dest-of-month.html" class="button-link">Learn More...</a>
+        </div>
+    </section>
+<!----------------section for the product page content--------------------------->
+    <section id="products-container" class="container-default">
+        <h1 id="so">Special Offers</h1>
+        <div id="category-container">
+            <div id="offer1">
+                <h2 id="fp">Full Packages</h2>
+                <p id="fp-p">Packages including food, hotels and transport</p>
+                <h3 id="fp-o">20% OFF</h3>
+                <a href="/student-1/products/products.html?category=packages" id="fp-c-n" class="button-link">Check
+                    Now</a>
+            </div>
+            <div id="offer2">
+                <h2 id="ho">Hotels</h2>
+                <p id="ho-p">Hotels in your favourite destination</p>
+                <h3 id="ho-o">10% OFF</h3>
+                <a href="/student-1/products/products.html?category=hotels" id="ho-c-n" class="button-link">Check
+                    Now</a>
+            </div>
+            <div id="offer3">
+                <h2 id="tic">Tickets</h2>
+                <p id="tic-p">Buy tickets for popular places</p>
+                <h3 id="tic-o">50% OFF</h3>
+                <a href="/student-1/products/products.html?category=tickets" id="tic-c-n" class="button-link">Check
+                    Now</a>
+            </div>
+            <div id="offer4">
+                <h2 id="tran">Transport</h2>
+                <p id="tran-p">Visit your destination with our transport services</p>
+                <h3 id="tran-o">15% OFF</h3>
+                <a href="/student-1/products/products.html?category=transport" id="tran-c-n" class="button-link">Check
+                    Now</a>
+            </div>
+        </div>
+    </section>
+<!----------------section for the quiz page content--------------------------->
+    <section id="quiz-container" class="container-default">
+        <h1 id="answerwin">Answer and Win Today!</h1>
+        <p id="answerwin-desc">Quizzes help one gain a broad or specialized understanding of an object.
+            Quizzes are intended to encourage fun learning methods while also enhancing general knowledge.
+            People can "think outside the box" or from diverse perspectives by participating in quiz.</p>
+        <a id="open-quiz" href="/student-3/quiz/quiz.html" class="button-link">Open The Quiz</a>
+    </section>
+
+<!----------------section for the gallery page content--------------------------->
+    <section id="dest-popular-container" class="container-default">
+        <h1 id="popu-dest">Popular Destinations</h1>
+        <div id="gallery-container">
+            <div id="thumb1" class="dest-thumbnail">
+                <label id="dest1">Kandy</label>
+                <a id="l-m-1" href="/student-4/info-page/info-page.html#kandy" class="button-link-thumbnail">Learn
+                    More...</a>
+            </div>
+            <div id="thumb2" class="dest-thumbnail">
+                <label id="dest2">Trincomalee</label>
+                <a id="l-m-2" href="/student-4/info-page/info-page.html#trinco" class="button-link-thumbnail">Learn
+                    More...</a>
+            </div>
+            <div id="thumb3" class="dest-thumbnail">
+                <label id="dest3">Colombo</label>
+                <a id="l-m-3" href="/student-4/info-page/info-page.html#cmb" class="button-link-thumbnail">Learn
+                    More...</a>
+            </div>
+            <div id="thumb4" class="dest-thumbnail">
+                <label id="dest4">Jaffna</label>
+                <a id="l-m-4" href="/student-4/info-page/info-page.html#jaff" class="button-link-thumbnail">Learn
+                    More...</a>
+            </div>
+
+            <div id="thumb5" class="dest-thumbnail">
+                <label id="dest5">Kandy</label>
+                <a id="l-m-5" href="/student-4/info-page/info-page.html#kandy" class="button-link-thumbnail">Learn
+                    More...</a>
+            </div>
+            <div id="thumb6" class="dest-thumbnail">
+                <label id="dest6">Trincomalee</label>
+                <a id="l-m-6" href="/student-4/info-page/info-page.html#trinco" class="button-link-thumbnail">Learn
+                    More...</a>
+            </div>
+
+            <div id="thumb7" class="dest-thumbnail">
+                <label id="dest7">Colombo</label>
+                <a id="l-m-7" href="/student-4/info-page/info-page.html#cmb" class="button-link-thumbnail">Learn
+                    More...</a>
+            </div>
+
+            <div id="thumb8" class="dest-thumbnail">
+                <label id="dest8">Jaffna</label>
+                <a id="l-m-8" href="/student-4/info-page/info-page.html#jaff" class="button-link-thumbnail">Learn
+                    More...</a>
+            </div>
+
+        </div>
+    </section>
+
+<!----------------section for the feedback page content--------------------------->
+    <section id="feedback-container" class="container-default">
+        <h1 id="feed-q">What do you think about us?</h1>
+        <p id="feed-disc">Sri Lanka offers a mix of attractions including beaches, wildlife parks, rainforests, tea
+            plantations, ancient ruins, Buddhist cultural sites, and festivals.</p>
+        <a id="leave-feed" href="../feedback/feedback.html" class="button-link">Leave a Feedback</a>
+    </section>
+
+<!-----------------------------footer part------------------------------->
+    <footer id="footer" class="container-default">
+        <div id="inner-container" class="container-default">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 id="pages">Pages</h4>
+                    <ul>
+                        <li><a id="home" href="/student-2/main-page/main-page.html">Home</a></li>
+                        <li><a id="products" href="/student-1/products/products.html">Products</a></li>
+                        <li><a id="gallery" href="/student-4/gallery/gallery.html">Gallery</a></li>
+                        <li><a id="quiz" href="/student-3/quiz/quiz.html">Quiz</a></li>
+                        <li><a id="feedback" href="/student-2/feedback/feedback.html">Feedback</a></li>
+                        <li><a id="sitemap" href="/student-4/site-map/site-map.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 id="content-pages">Content pages</h4>
+                    <ul>
+                        <li><a id="our-services" href="/student-1/our-services/our-services.html">Our Services</a></li>
+                        <li><a id="sigirock" href="/student-2/dest-of-month/dest-of-month.html">Sigiriya-rock</a></li>
+                        <li><a id="contactus" href="/student-3/contact-us/contact-us.html">Contact us</a></li>
+                        <li><a id="dest-more-info" href="/student-4/info-page/info-page.html">destination more
+                                information</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Page Editors</h4>
+                    <ul>
+                        <li><a id="student1" href="/student-1/page-editor/page-editor.html">Student-1</a></li>
+                        <li><a id="student2" href="/student-2/page-editor/page-editor.html">Student-2</a></li>
+                        <li><a id="student3" href="/student-3/page-editor/page-editor.html">Student-3</a></li>
+                        <li><a id="student4" href="/student-4/page-editor/page-editor.html">Student-4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 id="followus">follow us</h4>
+                    <div id="sociallinks" class="social-links">
+                        <a href="https://www.facebook.com/wonderscapetravel/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@wonderscape"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/w0nder.scape/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/wonderscape1"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
