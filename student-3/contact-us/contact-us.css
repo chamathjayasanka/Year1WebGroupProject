@@ -1,0 +1,102 @@
+/*
+    Author:     A.L.A. FALIH
+    Date:       March 31st, 2023
+    Purpose:    Common CSS styles for all pages
+    Copyright:  © 2023, All rights reserved
+*/
+@import url("../../student-2/common.css");
+body{
+	background:black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-color);
+    font-family: var(--banner-desc-font-family) 
+}
+/*background setting*/
+#quiz-video-container {
+	position: relative;
+	height: 40rem;
+	width: 100%;
+	background: url("../images/company.jpg");
+	background-size: 100% 100%;
+	transition: .3s;
+	overflow: hidden;
+}
+#quiz-video-gradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0), var(--body-color));
+}
+/*main container*/
+.wrapper .form {
+  background: transparent;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 30px 60px 0 var(--footer-back-color);
+  border-radius: 5px;
+  max-width: 480px;
+  padding: 3rem;
+  padding-bottom: 5px;
+  border-top: 5px solid var(--footer-back-color);
+  transform: translate(0%, -70%);
+}
+.wrapper .termsConditions{
+  margin: 0 auto 5px 80px;
+}
+.wrapper .pageTitle{
+  font-size: 2em;
+  font-weight: bold;
+  font-family: var(--banner-desc-font-family)
+}
+.wrapper .secondaryTitle{
+  color: white;
+}
+/*name text setup*/
+.wrapper .name {
+  background-color: #ebebeb;
+  color: #52beed(37, 36, 36);
+}
+.wrapper .name:hover {
+  border-bottom: 5px solid var(--footer-back-color);
+}
+/*email text setup*/
+.wrapper .email {
+  background-color: #ebebeb;
+  height: 2em;
+}
+.wrapper .email:hover {
+  border-bottom: 5px solid var(--footer-back-color);
+}
+/*message box setup*/
+.wrapper .message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+}
+.wrapper .message:hover {
+  border-bottom: 5px solid #00ff11c0;
+}
+.wrapper .formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+}
+/*submit button setup*/
+.wrapper .submit {
+  width: 200px;
+  color: white;
+  background-color: #52beed;
+  font-size: 20px;
+}
+.wrapper .submit:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-top: 5px solid #00ff11c0;
+  border-radius: 0%;
+  transition: .5s;
+}

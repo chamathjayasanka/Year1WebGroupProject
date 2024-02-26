@@ -1,0 +1,246 @@
+/*
+    Author:     A.A.N.R. MAYADUNNE
+    Date:       March 8th, 2023
+    Purpose:    Required styles for presentation page
+    Copyright:  © 2023, All rights reserved
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+    --max-site-width: 1000px;
+    --min-site-height: 700px;
+    --main-font-family: "Poppins", sans-serif;
+    --main-font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    min-height: var(--min-site-height);
+}
+
+header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 1rem;
+    width: 96%;
+    max-width: var(--max-site-width);
+    height: 8rem;
+    text-align: center;
+    border-radius: .6rem;
+    box-shadow: 0 0 .2rem #808080;
+    transition: .3s;
+}
+
+header > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#uni-name, #institute-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#faculty-name {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#uow-logo {
+    position: absolute;
+    left: 10px;
+    height: 5rem;
+    transition: .3s;
+}
+#iit-logo {
+    position: absolute;
+    right: 10px;
+    height: 5rem;
+    transition: .3s;
+}
+
+#module-header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    width: 96%;
+    max-width: var(--max-site-width);
+    height: 6.5rem;
+    text-align: center;
+    border-radius: .6rem;
+    box-shadow: 0 0 .2rem #808080;
+    transition: .3s;
+}
+
+#module-header label {
+    position: absolute;
+    font-weight: 500;
+    color: #000000;
+    transition: .3s;
+}
+
+#module-header span { color: #727272; }
+#module-name, #category, #website-name { left: 1rem; }
+#module-code, #tutorial-group, #project-team { right: 1rem; }
+#module-name, #module-code { top: .8rem; } 
+#category, #tutorial-group { top: 2.5rem; } 
+#website-name, #project-team { top: 4.2rem; }
+#site-name { color: #0064e7;}
+
+#team-members {
+    position: absolute;
+    font-size: 1.3rem;
+    font-weight: 500;
+    top: 18rem;
+    transition: .3s;
+}
+
+.student-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 .2rem #808080;
+    overflow: hidden;
+}
+
+.student-card label { opacity: 0; transition: .5s; }
+.student-card span { opacity: 0; transition: .5s; font-size: 1rem; font-weight: 600; }
+
+.student-card > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    font-weight: 500;
+    bottom: -5.7rem;
+}
+
+#student-1 { background-image: url("/student-1/images/student-1.png"); }
+#student-2 { background-image: url("/student-2/images/student-2.png"); }
+#student-3 { background-image: url("/student-3/images/student-3.jpg"); }
+#student-4 { background-image: url("/student-4/images/student-4.jpg"); }
+
+footer {
+    position: absolute;
+    display: flex;
+    z-index: 999;
+    flex-direction: row;
+    font-weight: 500;
+    width: 96%;
+    height: 2rem;
+    max-width: var(--max-site-width);
+    bottom: 1rem;
+    align-items: center;
+    transition: .3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+footer label {
+    position: relative;
+    color: #e42f0b;
+    left: 1rem;
+}
+#counter {
+    font-size: 2rem;
+    padding: 0 .5rem;
+    transition: .5s;
+}
+
+#stop-timer {
+    position: absolute;
+    width: 5.5rem;
+    height: 2rem;
+    right: 1rem;
+    border: 0;
+    border-radius: .3rem;
+    background-color: #0054c1;
+    font-weight: 500;
+    color: #ffffff;
+    box-shadow: 0 0 .2rem #585858;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#stop-timer:hover { background-color: #0064e7; }
+#stop-timer:active { background-color: #0054c1; }
+
+@media (max-width: 980px) { #uow-logo, #iit-logo { height: 4rem; }}
+@media (max-width: 880px) { #uow-logo, #iit-logo { height: 3rem; }}
+
+@media (max-width: 860px) {
+    footer {
+        position: fixed;
+        width: 100%;
+        height: 3rem;
+        bottom: 0;
+        background-color: #ffffff;
+        box-shadow: 0 0 .1rem #808080;
+    }
+}
+
+@media (max-width: 780px) { 
+
+    header {
+        top: 0;
+        width: 100%;
+        height: 8rem;
+        border-radius: 0;
+    }
+
+    #module-code, #tutorial-group, #project-team { left: 1rem; right: auto; }
+    #module-header { 
+        top: 9rem; 
+        width: 100%;
+        border-radius: 0;
+        height: 11.5rem;
+    }
+    #module-code { top: 5.9rem; }
+    #tutorial-group { top: 7.6rem; }
+    #project-team { top: 9.3rem; }
+    #uow-logo, #iit-logo { display: none; }
+    #team-members { top: 22rem; }
+
+    footer { font-size: .8rem; }
+    #counter { font-size: 1.7rem; }
+}
+@media (max-width: 490px) { 
+    #module-header { 
+        text-align: left;
+        font-size: .8rem;
+    }
+}
+@media (max-width: 400px) { 
+    header { font-size: .8rem; }
+    #uni-name, #institute-name { font-size: 1rem; }
+}

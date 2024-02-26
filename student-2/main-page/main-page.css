@@ -1,0 +1,557 @@
+
+.section-default {
+    position: relative;
+    top: 0;
+    height: 40rem;
+    width: 96%;
+    max-width: 100rem;
+    background-color: var(--container-back-color);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: .3s;
+}
+
+
+#video-container {
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    transition: .3s;
+    overflow: hidden;
+}
+
+#video-container > video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-width: 1600px;
+}
+
+#banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -100%);
+    font-family: var(--banner-font-family);
+    font-size: var(--banner-font-size);
+    color: var(--site-text-color-5);
+    text-align: center;
+    text-shadow: 0 0 1rem #000000;
+}
+#banner-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -20%);
+    font-family: var(--banner-desc-font-family);
+    font-size: var(--banner-desc-font-size);
+    color: var(--site-text-color-5);
+    text-align: center;
+    text-shadow: 0 0 1rem #000000;
+}
+#banner-site-name {
+    color: var(--banner-site-fore-color);
+}
+#video-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0), var(--body-color));
+
+}
+
+#dest-month-container {
+    background-image: linear-gradient(transparent,rgb(0, 0, 0)), url("../images/sigiriya.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -20rem;
+    height: 30rem;    
+}
+
+#dest-month-container:hover {
+    background-position: -18rem;
+}
+
+#dest-month-container > h1 {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: lighter;
+}
+#dest-month-container > div {
+    position: absolute;
+    flex-direction:column;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-color: var(--container-back-color);
+    color: #000000;
+
+
+}
+
+#dest-month-container > div > h2 {
+    position: relative;
+    color: var(--site-text-color-1);
+    left: 3rem;
+    width: 85%;
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: var(--banner-desc-font-family);
+    
+}
+
+#dest-month-container > div > p {
+    position: relative;
+    color: var(--site-text-color-1);
+    left: 3rem;
+    width: 85%;
+    font-size: 1.1rem;
+    margin-top: 1.7rem;
+    text-align: justify;
+}
+
+#dest-month-container > div > a {
+    position: relative;
+    left: 3rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--site-text-color-1);
+
+}
+
+#products-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .3s;
+    height: 30rem;
+    align-items: center;
+}
+
+#products-container > h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: var(--banner-desc-font-family);
+    color: var(--site-text-color-1);
+
+}
+
+
+#category-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+    width: 100%;
+    height: 60%;
+}
+
+
+#category-container > div{
+    position: relative;
+    width: 24%;
+    height: 20rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("../images/sale.png");
+    background-repeat: no-repeat;
+    background-size: 10rem 10rem;
+    background-position: 6.5rem 1.3rem;
+    font-family: var(--banner-desc-font-family);
+
+}
+
+
+
+
+#category-container > div > h2{
+    width: 100%;
+    color: var(--site-text-color-1);
+}
+#category-container > div > h3{
+    position: absolute;
+    width: 100%;
+    top: 10rem;
+    color: #ff0000;
+}
+#category-container > div > a{
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--site-text-color-1);
+
+}
+
+#category-container > div > p {
+    position: absolute;
+    color: var(--site-text-color-1);
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 10rem;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    
+}
+
+#products-container > a {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 16rem;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    font-family: var(--banner-desc-font-family);
+    color: var(--site-text-color-1);
+
+}
+
+
+
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .3s;
+    height: 21rem;
+    align-items: center;
+}
+
+#quiz-container > h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: var(--banner-desc-font-family);
+    color: var(--site-text-color-1);
+
+}
+
+#quiz-container > p {
+    position: relative;
+    color: var(--site-text-color-1);
+    width: 80%;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: var(--banner-desc-font-family);
+}
+
+#quiz-container > a {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 16rem;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    color: var(--site-text-color-1);
+
+}
+
+#feedback-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .3s;
+    height: 21rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#feedback-container > h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: var(--banner-desc-font-family);
+    color: var(--site-text-color-1);
+
+}
+
+#feedback-container > p {
+    position: relative;
+    color: var(--site-text-color-1);
+    width: 80%;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#feedback-container > a {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 16rem;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    font-family: var(--banner-desc-font-family);
+    color: var(--site-text-color-1);
+
+}
+
+#dest-popular-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -13rem;
+    overflow: hidden;
+    height: 40rem;
+}
+
+#dest-popular-container > h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: var(--banner-desc-font-family);
+    color: var(--site-text-color-1);
+}
+
+#gallery-container {
+    position: relative;
+    align-items: center;
+    width: 200%;
+    height: 40rem;
+    margin-top: 2rem;
+    animation: gallery-anim;
+    animation-duration: 20s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+#gallery-container:hover {
+    animation-play-state: paused;
+}
+
+.dest-thumbnail {
+    position: absolute;
+    display: inline-block;
+    width: 20rem;
+    height: 30rem;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    margin: 0;
+    box-shadow: 0 0 .3rem #000000;
+    background-image: url("./media/images/gallery/kandy.jpeg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.dest-thumbnail > label {
+    position: absolute;
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    width: 100%;
+    height: 4rem;
+    text-overflow: ellipsis;
+    color: var(--site-text-color-2);
+    background-color: rgb(34, 155, 247);
+    box-shadow: 0 0 .3rem #000000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--banner-desc-font-family);
+}
+
+.dest-thumbnail > a {
+    position: absolute;
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    width: 100%;
+    height: 4rem;
+    bottom: 0;
+    text-overflow: ellipsis;
+    color: var(--site-text-color-2);
+    background-color: rgb(35, 35, 35);
+    box-shadow: 0 0 .3rem #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--banner-desc-font-family);
+}
+
+
+#thumb1 {
+    left: 0;
+    background-image: url("../images/kandy.jpeg");
+}
+#thumb2 {
+    left: 27rem;
+    background-image: url("../images/trinco.jpg");
+}
+#thumb3 {
+    left: 54rem;
+    background-image: url("../images/colombo.jpg");
+}
+#thumb4 {
+    left: 81rem;
+    background-image: url("../images/jaffna.jpg");
+}
+#thumb5 {
+    left: 108rem;
+    background-image: url("../images/kandy.jpeg");
+}
+#thumb6 {
+    left: 135rem;
+    background-image: url("../images/trinco.jpg");
+}
+#thumb7 {
+    left: 162rem;
+    background-image: url("../images/colombo.jpg");
+}
+
+#thumb8 {
+    left: 189rem;
+    background-image: url("../images/jaffna.jpg");
+}
+
+/*-------------------------For to do the card animation-------------------------------*/
+
+@keyframes gallery-anim {
+    0% {
+        left: 0;        
+    }
+    100% {
+        left: -108rem;        
+    }
+}
+
+
+
+/*--------------------To make the site Responsive------------------------------*/
+
+@media(max-width: 850px){
+
+
+#dest-month-container {
+    background-position: 20% -15rem;
+    height: 50rem;    
+}
+
+#dest-month-container:hover {
+    background-position: 20% -15rem;
+}
+
+#dest-month-container > h1 {
+    top: 20%;
+    color: var(--site-text-color-1);
+
+}
+#dest-month-container > div {
+    left: 0;
+    width: 100%;
+    height: 30rem;
+    bottom: 0;
+}
+
+#dest-month-container > div > h2 {
+    left: 3rem;
+    width: 85%;
+    margin-top: 3rem;
+    color: var(--site-text-color-1);
+
+}
+
+#dest-month-container > div > p {
+    left: 3rem;
+    width: 85%;
+    margin-top: 1.7rem;
+    color: var(--site-text-color-1);
+
+}
+
+#dest-month-container > div > a {
+    left: 3rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--site-text-color-1);
+
+}
+
+#products-container {
+    height: 110rem;
+}
+
+#category-container {
+    display: block;
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+
+#category-container > div{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20rem;
+    height: 24rem;
+    margin: 2rem 0;
+    overflow: hidden;
+    box-shadow: 0 0 .2rem #000000;
+    background-position-y: 3rem;
+}
+
+    
+
+#category-container > div > h2{
+    margin-top: 1rem;
+    width: 100%;
+    color: var(--site-text-color-1);
+}
+#category-container > div > h3{
+    position: absolute;
+    width: 100%;
+    top: 14rem;
+    color: #ff0000;
+}
+#category-container > div > a{
+    position: absolute;
+    bottom: .7rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#category-container > div > p {
+    position: absolute;
+    color: var(--site-text-color-1);
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 13rem;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;    
+}    
+
+#quiz-container {
+    height: 26rem;
+}
+
+#feedback-container {
+    height: 23rem;
+}
+
+}
+
+
+
+
+
+
+
+
+

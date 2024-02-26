@@ -1,0 +1,302 @@
+/*
+    Author:     A.L.A. FALIH
+    Date:       March 31st, 2023
+    Purpose:    Common CSS styles for all pages
+    Copyright:  © 2023, All rights reserved
+*/
+@import url("/student-2/common.css");
+
+
+/*background setting*/
+#quiz-image-container {
+	position: absolute;
+	height: 40rem;
+	width: 100%;
+	background: url("../images/sunset2.jpg");
+	background-size: 100% 120%;
+	transition: .3s;
+	overflow: hidden;
+}
+#quiz-image-gradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0), var(--body-color));
+}
+/*hovering member container*/
+.members-container {
+	position: relative;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+#studentDetails {
+	position: relative;
+	text-align: center;
+	margin-top: 200px;
+	width: 96%;
+	max-width: 1400px;
+}
+#studentDetails > h1 {
+	height: 200px;
+	font-size: 2.5rem;
+	color: #ffffff;
+	font-family: var(--banner-font-family);
+}
+
+.st-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	height: 400px;
+	margin: 0 1rem;
+}
+
+
+/*more link click setup*/
+.more-details-button{
+	position: relative;
+	display: block;
+	width: 50px;
+	background: transparent;
+	backdrop-filter: blur(5px);
+	color: rgb(249, 246, 246);
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 0rem 2rem 0rem 2rem;
+	transform: translate(3%, -20%);
+
+}
+.more-details-button:hover{
+	color: #0b0b0b;
+	background: rgb(36, 187, 237);
+	transition: ease-out .2s;
+	border-radius: 1rem;
+}
+
+
+.member {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	overflow: hidden;
+	box-shadow:  0 0 10px 2px rgb(15, 15, 15);
+	border-radius: 50%;
+}
+.member img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease-in-out;
+}
+.member:hover img {
+	transform: scale(1.2);
+}
+/*hovering inner text part*/
+.member-details {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background-color: rgba(59, 90, 76, 0.541);
+	color: #fff;
+	padding: 10px;
+	transform: translateY(100%);
+	transition: transform 0.3s ease-in-out;
+}
+.member:hover .member-details {
+	transform: translateY(0);
+}
+.member-details p{
+	text-align: center;
+}
+.member-details .name{
+	margin: 5px 0;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.member-details .role{
+	margin: 5px 0;
+	font-size: 1rem;
+	text-align: center;
+}
+/*more details content*/
+.student-details h1{
+    text-align: center;
+    margin-top: 10rem;
+}
+.student-details h1{
+	color: #ffffff;	
+    font-size: 3rem;
+	font-weight: 400;
+	text-shadow: 0 0 2rem #000000;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(0, -1000%);
+}
+/*more link click setup*/
+.more-details-a{
+	display: grid;
+  	grid-template-columns: repeat(4, 1fr);
+	gap: 14em;
+	transform: translateY(-2000%);
+	background: transparent;
+	backdrop-filter: blur(5px);
+	color: rgb(249, 246, 246);
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+	padding: 0rem 2rem 0rem 2rem;
+}
+.more-details{
+	border: none;
+	font-size: 2rem;
+}
+.more-details-a:hover{
+	color: #0b0b0b;
+	background: rgb(36, 187, 237);
+	transition: ease-out .2s;
+	border-radius: 1rem;
+}
+/*more details image container*/
+.img-details{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	margin: 20px;
+	height: 50%;
+	max-width: 1300px;
+	padding: 2rem;
+	background: white;
+	box-shadow:  0 0 10px 2px rgb(30, 1, 79);
+}
+.content-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 2rem 0 0 2rem;
+	padding-left: 5rem;
+	background-color: white;
+}
+h2{
+	padding: 10rem 2rem 2rem 3rem;
+	color: #fff;
+}
+/*right side member details panel*/
+.details-list{
+	font-size: 1.5rem;
+	display: grid;
+	list-style: none;
+	background-color: var(--footer-back-color);
+	color: #bbbbbb;
+	width: 500px;
+	height: 620px;
+	text-align: left;
+}
+.details-list li{
+	padding: 2rem;
+}
+.quote{
+	padding: 2rem;
+	text-align: center;
+	color: #00ff11c0;
+}
+.student-details-content{
+	background: transparent;
+	gap: 2rem;
+}
+/*fliping inner text to panel setup*/
+.flip-box {
+	width: 300px;
+	height: 600px;
+	border: none;
+}
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.flip-box-front {
+	background-color: #bbb;
+	color: black;
+}
+.flip-box-back {
+	background-color: #555;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+/*mobile view application setup*/
+@media (max-width: 850px) {
+	#studentDetails {
+		width: 100%;
+	}
+	.student-details h1{
+		text-shadow: 0px 3px 10px rgb(8, 8, 8);
+		color: #ffffff;	
+		font-size: 2rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(0, -1700%);
+	}
+	.more-details-a{
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+		gap: 16em;
+		row-gap: 20rem;
+		transform: translate(5%, -82%)
+	}
+	.more-details-a a{
+		background: transparent;
+		backdrop-filter: blur(5px);
+		color: rgb(249, 246, 246);
+		cursor: pointer;
+		border-radius: 10rem;
+		box-shadow:  0 0 10px 2px rgb(207, 106, 225);
+		text-align: center;
+		text-decoration: none;
+		font-size: 1rem;
+		padding: 0rem 2rem 0rem 2rem;
+	}
+	.img-details{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		justify-content: center;
+		margin: 20px;
+		height: 50%;
+		padding: 4rem;
+	}
+	.content-img img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		box-shadow:  0 0 10px 2px rgb(174, 173, 174);
+		border-radius: 0;
+		padding-left: 5rem;
+	}
+}

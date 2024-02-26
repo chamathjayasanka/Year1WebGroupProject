@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/student-2/common.css">
+    <link rel="stylesheet" href="./products.css">
+    <script defer type="module" src="../main.js"></script>
+    <script defer type="module" src="./checkout.js"></script>
+    <title>Checkout</title>
+</head>
+<body>
+
+    <header id="main-header">
+        <div id="main-logo"></div>
+        <label id="menu-icon" for="menu-checkbox">
+        <span id="cart-notif"></span>
+        </label>
+        <input type="checkbox" id="menu-checkbox">
+        <nav id="nav-bar">
+            <ul>
+                <li><a id="home-icon" href="/student-2/main-page/main-page.html"></a></li>
+                <li class="active-menu"><a id="nav-item1" href="/student-1/products/products.html">PRODUCTS</a></li>
+                <li><a id="nav-item2" href="/student-4/gallery/gallery.html">GALLERY</a></li>
+                <li><a id="nav-item3" href="/student-3/quiz/quiz.html">QUIZ</a></li>
+                <li><a id="nav-item4" href="/student-2/feedback/feedback.html">FEEDBACK</a></li>
+                <li><a id="nav-item5" href="/student-3/about-us/about-us.html">ABOUT US</a></li>
+                <li><a id="nav-item6" href="/student-4/site-map/site-map.html">SITE MAP</a></li>
+                <li>
+                    <div id="control-icons">
+                        <a id="cart-icon" class="control-button">
+                            <span id="cart-count"></span>
+                        </a>
+                        <a id="theme-icon" class="control-button"></a>
+                        <select name="site-lang" id="lang-select">
+                            <option class="langcolor" value="0">English</option>
+                            <option class="langcolor" value="1">සිංහල</option>
+                            <option class="langcolor" value="2">தமிழ்</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </nav>    
+    </header>
+ 
+    <div id="header-background" class="container-default">
+        <img src="../images/travelboy.jpg"></img>
+        <div id="header-gradient"></div>
+    </div>
+
+    <div id="checkout-container" class="container-default">
+        <label id="checkout-label">Confirm your order</label>
+
+        <div id="title-slide" class="slide-container">
+            <label id="slide-9">Click 'Pay Now!' to complete your purchase</label>
+            <div>
+                <label>Reference Number: <span id="ref-num">000-000-000-000</span></label>
+                <label>Item count: <span id="item-countz">0</span></label>
+                <label>Sub total: <span id="total-pricez">0 USD</span></label>
+                <label>Card Number: <span id="card-num">XXXX-XXXX-XXXX-000</span></label>
+                <label>Cardholder's Name: <span id="card-name">Empty</span></label>
+                <label>Address: <span id="card-addr">Empty</span></label>
+                <label>Telephone: <span id="card-tel">Empty</span></label>
+                <label>Email: <span id="card-email">Empty</span></label>
+
+                <input type="button" id="confirm-button" class="button-enabled" name="btn-confirm" value="Pay Now!">       
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="container-default">
+        <div id="inner-container" class="container-default">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 id="pages">Pages</h4>
+                    <ul>
+                        <li ><a id="home" href="/student-2/main-page/main-page.html">Home</a></li>
+                        <li ><a id="products" href="/student-1/products/products.html">Products</a></li>
+                        <li ><a  id="gallery"href="/student-4/gallery/gallery.html">Gallery</a></li>
+                        <li ><a id="quiz" href="/student-3/quiz/quiz.html">Quiz</a></li>
+                        <li><a id="feedback" href="/student-2/feedback/feedback.html">Feedback</a></li>
+                        <li><a id="sitemap" href="/student-4/site-map/site-map.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 id="content-pages">Content pages</h4>
+                    <ul>
+                        <li><a id="our-services" href="/student-1/our-services/our-services.html">Our Services</a></li>
+                        <li><a id="sigirock" href="/student-2/dest-of-month/dest-of-month.html">Sigiriya-rock</a></li>
+                        <li><a id="contactus" href="/student-3/contact-us/contact-us.html">Contact us</a></li>
+                        <li><a id="dest-more-info" href="/student-4/info-page/info-page.html">destination more information</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Page Editors</h4>
+                    <ul>
+                        <li><a id="student1" href="/student-1/page-editor/page-editor.html">Student-1</a></li>
+                        <li><a  id="student2" href="/student-2/page-editor/page-editor.html">Student-2</a></li>
+                        <li><a  id="student3" href="/student-3/page-editor/page-editor.html">Student-3</a></li>
+                        <li><a id="student4" href="/student-4/page-editor/page-editor.html">Student-4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 id="followus">follow us</h4>
+                    <div id="sociallinks" class="social-links">
+                        <!--These are sample place holder links-->
+                        <a href="https://www.facebook.com/wonderscapetravel/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@wonderscape"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/w0nder.scape/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/wonderscape1"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+   </footer>
+
+
+</body>
+</html>
+
+
